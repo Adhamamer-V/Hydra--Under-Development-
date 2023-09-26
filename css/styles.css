@@ -1,0 +1,131 @@
+/* Vars */
+:root {
+  --bgcolor: #302c42;
+}
+/* Vars End */
+
+/* Global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--bgcolor);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* Global Styles end */
+
+/* header */
+
+header {
+  text-transform: uppercase;
+}
+header .container {
+  position: relative;
+  align-items: center;
+  padding-top: 54px;
+}
+
+header .container,
+header .logo,
+header nav ul,
+.buttons {
+  display: flex;
+}
+
+header .logo {
+  align-items: center;
+  flex: 1;
+  cursor: auto;
+}
+
+.Logo-Name {
+  margin-left: 15px;
+}
+nav {
+  flex: 2;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding-right: 41px;
+}
+
+header .Toggle-Menu {
+  display: none;
+  position: absolute;
+}
+
+header .contact,
+header .join {
+  border-radius: 40px;
+  padding: 17px 38px;
+  border: none;
+}
+header .contact {
+  color: #fff;
+  border: 2px solid #fff;
+  margin-right: 38px;
+  background-color: transparent;
+}
+
+header .join {
+  color: #343045;
+  font-weight: 700;
+  font-size: 12px;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+}
+
+@media (max-width: 992px) {
+  header nav ul li a {
+    display: none;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  header .Toggle-Menu {
+    display: flex;
+    right: 0;
+    margin-right: 20px;
+  }
+}
+
+/* header end */
